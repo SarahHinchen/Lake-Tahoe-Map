@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d91280e903ce203b3e1cae24a2f72957 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d91280e903ce203b3e1cae24a2f72957" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d91280e903ce203b3e1cae24a2f72957 = L.map(
+                "map_d91280e903ce203b3e1cae24a2f72957",
+                {
+                    center: [39.0968, -120.0324],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d81b3c8b0dd166e4f31d5c53c4676282 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var marker_89dd64b809523a843189ec3a481ae418 = L.marker(
+                [38.9575, -119.9464],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_c44439444aece19186592772a0e95dc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89dd64b809523a843189ec3a481ae418.setIcon(icon_c44439444aece19186592772a0e95dc1);
+        
+    
+        var popup_bbad3b02d801dbea460cfc787ab9c12b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab483e184070015d2c96573616dc0c85 = $(`<div id="html_ab483e184070015d2c96573616dc0c85" style="width: 100.0%; height: 100.0%;"><b>Station House Inn South Lake Tahoe</b><br>2.5 miles from downtown</div>`)[0];
+            popup_bbad3b02d801dbea460cfc787ab9c12b.setContent(html_ab483e184070015d2c96573616dc0c85);
+        
+
+        marker_89dd64b809523a843189ec3a481ae418.bindPopup(popup_bbad3b02d801dbea460cfc787ab9c12b)
+        ;
+
+        
+    
+    
+            marker_89dd64b809523a843189ec3a481ae418.bindTooltip(
+                `<div>
+                     Station House Inn South Lake Tahoe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6433958020472d0f4439ec6e50ee65aa = L.marker(
+                [38.939, -119.946],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_43545436a1cc6c2fbb6f2a302e6e21e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6433958020472d0f4439ec6e50ee65aa.setIcon(icon_43545436a1cc6c2fbb6f2a302e6e21e6);
+        
+    
+        var popup_0a34ca6a2e9728169709d5a0d3f27d9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68747b0edd93e8d9200d9a3f17846416 = $(`<div id="html_68747b0edd93e8d9200d9a3f17846416" style="width: 100.0%; height: 100.0%;"><b>Hilton Vacation Club Tahoe Seasons Resort</b><br>2.4 miles from downtown</div>`)[0];
+            popup_0a34ca6a2e9728169709d5a0d3f27d9b.setContent(html_68747b0edd93e8d9200d9a3f17846416);
+        
+
+        marker_6433958020472d0f4439ec6e50ee65aa.bindPopup(popup_0a34ca6a2e9728169709d5a0d3f27d9b)
+        ;
+
+        
+    
+    
+            marker_6433958020472d0f4439ec6e50ee65aa.bindTooltip(
+                `<div>
+                     Hilton Vacation Club Tahoe Seasons Resort
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_493f205322bb8dce01bf27a65200bcc9 = L.marker(
+                [38.9465, -119.962],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_f5d57d0af36d4fff48bf4b7edeaa4764 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_493f205322bb8dce01bf27a65200bcc9.setIcon(icon_f5d57d0af36d4fff48bf4b7edeaa4764);
+        
+    
+        var popup_558ac54cd111aa7cdab09e442b5bfd58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fb71247fd04b954e4aa06a5828a1c5c = $(`<div id="html_1fb71247fd04b954e4aa06a5828a1c5c" style="width: 100.0%; height: 100.0%;"><b>Hotel Azure</b><br>1 mile from downtown</div>`)[0];
+            popup_558ac54cd111aa7cdab09e442b5bfd58.setContent(html_1fb71247fd04b954e4aa06a5828a1c5c);
+        
+
+        marker_493f205322bb8dce01bf27a65200bcc9.bindPopup(popup_558ac54cd111aa7cdab09e442b5bfd58)
+        ;
+
+        
+    
+    
+            marker_493f205322bb8dce01bf27a65200bcc9.bindTooltip(
+                `<div>
+                     Hotel Azure
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab527b4e21d8583ef89fd2b6615dd3c0 = L.marker(
+                [38.9569, -119.9493],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_0cc5ca66b64954043195a7046c6f12dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ab527b4e21d8583ef89fd2b6615dd3c0.setIcon(icon_0cc5ca66b64954043195a7046c6f12dd);
+        
+    
+        var popup_7e2a837679c9d79f602795f0a3e7a4e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3453bf0fc11202c0e30ba532446b15a = $(`<div id="html_d3453bf0fc11202c0e30ba532446b15a" style="width: 100.0%; height: 100.0%;"><b>The Coachman Hotel</b><br>2.7 miles from downtown</div>`)[0];
+            popup_7e2a837679c9d79f602795f0a3e7a4e5.setContent(html_d3453bf0fc11202c0e30ba532446b15a);
+        
+
+        marker_ab527b4e21d8583ef89fd2b6615dd3c0.bindPopup(popup_7e2a837679c9d79f602795f0a3e7a4e5)
+        ;
+
+        
+    
+    
+            marker_ab527b4e21d8583ef89fd2b6615dd3c0.bindTooltip(
+                `<div>
+                     The Coachman Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51e415313f65f617923564e233464a93 = L.marker(
+                [38.94, -119.9495],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_4c7d7b9ef4cc064a0c6720b608ca4345 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_51e415313f65f617923564e233464a93.setIcon(icon_4c7d7b9ef4cc064a0c6720b608ca4345);
+        
+    
+        var popup_aa7e7d89dacf4283a8af14fb4bb4c6ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19a24ca68163c996e8c2a037f4b79034 = $(`<div id="html_19a24ca68163c996e8c2a037f4b79034" style="width: 100.0%; height: 100.0%;"><b>Margaritaville Resort Lake Tahoe</b><br>2.8 miles from downtown</div>`)[0];
+            popup_aa7e7d89dacf4283a8af14fb4bb4c6ce.setContent(html_19a24ca68163c996e8c2a037f4b79034);
+        
+
+        marker_51e415313f65f617923564e233464a93.bindPopup(popup_aa7e7d89dacf4283a8af14fb4bb4c6ce)
+        ;
+
+        
+    
+    
+            marker_51e415313f65f617923564e233464a93.bindTooltip(
+                `<div>
+                     Margaritaville Resort Lake Tahoe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_990f55846db774cbd0f9b89c0380c652 = L.marker(
+                [38.944, -119.9502],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_8075dcd42d2451002539520007766403 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_990f55846db774cbd0f9b89c0380c652.setIcon(icon_8075dcd42d2451002539520007766403);
+        
+    
+        var popup_5b86252a83b157cbf30a0ae95d15c615 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_795ae7870f47b85ebe51082c050d9c8f = $(`<div id="html_795ae7870f47b85ebe51082c050d9c8f" style="width: 100.0%; height: 100.0%;"><b>Hilton Vacation Club Lake Tahoe Resort</b><br>1.8 miles from downtown</div>`)[0];
+            popup_5b86252a83b157cbf30a0ae95d15c615.setContent(html_795ae7870f47b85ebe51082c050d9c8f);
+        
+
+        marker_990f55846db774cbd0f9b89c0380c652.bindPopup(popup_5b86252a83b157cbf30a0ae95d15c615)
+        ;
+
+        
+    
+    
+            marker_990f55846db774cbd0f9b89c0380c652.bindTooltip(
+                `<div>
+                     Hilton Vacation Club Lake Tahoe Resort
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e22b9de3dca9b146ce036b32a749a67d = L.marker(
+                [39.1998, -119.9275],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_86ca30d2275590d22570e99c0ca5603a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e22b9de3dca9b146ce036b32a749a67d.setIcon(icon_86ca30d2275590d22570e99c0ca5603a);
+        
+    
+        var popup_49de5ce0d50d512387ea52053d7a558d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27600bf29134c78e838d4500dbdbf37b = $(`<div id="html_27600bf29134c78e838d4500dbdbf37b" style="width: 100.0%; height: 100.0%;"><b>Sand Harbor Beach</b><br>Shallow, calm waters ideal for toddlers</div>`)[0];
+            popup_49de5ce0d50d512387ea52053d7a558d.setContent(html_27600bf29134c78e838d4500dbdbf37b);
+        
+
+        marker_e22b9de3dca9b146ce036b32a749a67d.bindPopup(popup_49de5ce0d50d512387ea52053d7a558d)
+        ;
+
+        
+    
+    
+            marker_e22b9de3dca9b146ce036b32a749a67d.bindTooltip(
+                `<div>
+                     Sand Harbor Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_201493b881e26f58a4c074a2b43d2431 = L.marker(
+                [39.171, -120.1385],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_20e6b094f55eb0e18eead3ad13209dcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_201493b881e26f58a4c074a2b43d2431.setIcon(icon_20e6b094f55eb0e18eead3ad13209dcf);
+        
+    
+        var popup_1130179f2cf812f592a1e6f42762c42b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69d766f8e51a1dc33a604f929ed67c67 = $(`<div id="html_69d766f8e51a1dc33a604f929ed67c67" style="width: 100.0%; height: 100.0%;"><b>Commons Beach Park</b><br>Grassy picnic area and playground</div>`)[0];
+            popup_1130179f2cf812f592a1e6f42762c42b.setContent(html_69d766f8e51a1dc33a604f929ed67c67);
+        
+
+        marker_201493b881e26f58a4c074a2b43d2431.bindPopup(popup_1130179f2cf812f592a1e6f42762c42b)
+        ;
+
+        
+    
+    
+            marker_201493b881e26f58a4c074a2b43d2431.bindTooltip(
+                `<div>
+                     Commons Beach Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c94330e68f0abc2f2092216bea001232 = L.marker(
+                [39.2055, -119.9272],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_859f7d7cc6b3efd708739f33741cd8c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c94330e68f0abc2f2092216bea001232.setIcon(icon_859f7d7cc6b3efd708739f33741cd8c5);
+        
+    
+        var popup_f9a312bf180159b51b18326efe0aa973 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffc70cd7035a8e79407a70bc0e1a08bb = $(`<div id="html_ffc70cd7035a8e79407a70bc0e1a08bb" style="width: 100.0%; height: 100.0%;"><b>Tahoe East Shore Trail</b><br>Stroller-friendly scenic trail</div>`)[0];
+            popup_f9a312bf180159b51b18326efe0aa973.setContent(html_ffc70cd7035a8e79407a70bc0e1a08bb);
+        
+
+        marker_c94330e68f0abc2f2092216bea001232.bindPopup(popup_f9a312bf180159b51b18326efe0aa973)
+        ;
+
+        
+    
+    
+            marker_c94330e68f0abc2f2092216bea001232.bindTooltip(
+                `<div>
+                     Tahoe East Shore Trail
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9db4affb64d56906d0ce34657a7382d = L.marker(
+                [38.9545, -120.1015],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_eb7ba50b0d082cfade2a65b768edcdab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e9db4affb64d56906d0ce34657a7382d.setIcon(icon_eb7ba50b0d082cfade2a65b768edcdab);
+        
+    
+        var popup_2cb01c2944feecf5922a08fb28837c13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3cb9162627196c88eeeb7e34dfcbfd1 = $(`<div id="html_e3cb9162627196c88eeeb7e34dfcbfd1" style="width: 100.0%; height: 100.0%;"><b>Emerald Bay State Park</b><br>Beautiful viewpoints for family photos</div>`)[0];
+            popup_2cb01c2944feecf5922a08fb28837c13.setContent(html_e3cb9162627196c88eeeb7e34dfcbfd1);
+        
+
+        marker_e9db4affb64d56906d0ce34657a7382d.bindPopup(popup_2cb01c2944feecf5922a08fb28837c13)
+        ;
+
+        
+    
+    
+            marker_e9db4affb64d56906d0ce34657a7382d.bindTooltip(
+                `<div>
+                     Emerald Bay State Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52d8044489f0699b55531f2301dd2f37 = L.marker(
+                [38.931, -120.0452],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_2c699446fff47df468f52df5b3f4a8a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_52d8044489f0699b55531f2301dd2f37.setIcon(icon_2c699446fff47df468f52df5b3f4a8a7);
+        
+    
+        var popup_fde56250b9ff30beb819e199d9292df7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86ae411589bed75bdae6b03d6fa47b01 = $(`<div id="html_86ae411589bed75bdae6b03d6fa47b01" style="width: 100.0%; height: 100.0%;"><b>Taylor Creek Visitor Center</b><br>Stream Profile Chamber to view underwater life</div>`)[0];
+            popup_fde56250b9ff30beb819e199d9292df7.setContent(html_86ae411589bed75bdae6b03d6fa47b01);
+        
+
+        marker_52d8044489f0699b55531f2301dd2f37.bindPopup(popup_fde56250b9ff30beb819e199d9292df7)
+        ;
+
+        
+    
+    
+            marker_52d8044489f0699b55531f2301dd2f37.bindTooltip(
+                `<div>
+                     Taylor Creek Visitor Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb156cd64c90ee40a7cc91a8d2a0f44d = L.marker(
+                [38.9503, -119.965],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_905db215b3feb745b9a6777ee06c74b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eb156cd64c90ee40a7cc91a8d2a0f44d.setIcon(icon_905db215b3feb745b9a6777ee06c74b6);
+        
+    
+        var popup_0ec8010fa492cfe33305764185a1415b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49f0d546d94c0ff8190b04afe06921a2 = $(`<div id="html_49f0d546d94c0ff8190b04afe06921a2" style="width: 100.0%; height: 100.0%;"><b>Tahoe Tot Spot</b><br>Indoor play space for young children</div>`)[0];
+            popup_0ec8010fa492cfe33305764185a1415b.setContent(html_49f0d546d94c0ff8190b04afe06921a2);
+        
+
+        marker_eb156cd64c90ee40a7cc91a8d2a0f44d.bindPopup(popup_0ec8010fa492cfe33305764185a1415b)
+        ;
+
+        
+    
+    
+            marker_eb156cd64c90ee40a7cc91a8d2a0f44d.bindTooltip(
+                `<div>
+                     Tahoe Tot Spot
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b53c4cd659658123c6e6867e90301f0a = L.marker(
+                [39.1602, -120.1463],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_2f7396dc87f606c4a74df4d9466bb859 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b53c4cd659658123c6e6867e90301f0a.setIcon(icon_2f7396dc87f606c4a74df4d9466bb859);
+        
+    
+        var popup_824b0f75e196d9a74b330b3858996a77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6e6c5a2a85c82eb8b704c3b0916c526 = $(`<div id="html_b6e6c5a2a85c82eb8b704c3b0916c526" style="width: 100.0%; height: 100.0%;"><b>Fire Sign Café</b><br>Breakfast or brunch with hearty options</div>`)[0];
+            popup_824b0f75e196d9a74b330b3858996a77.setContent(html_b6e6c5a2a85c82eb8b704c3b0916c526);
+        
+
+        marker_b53c4cd659658123c6e6867e90301f0a.bindPopup(popup_824b0f75e196d9a74b330b3858996a77)
+        ;
+
+        
+    
+    
+            marker_b53c4cd659658123c6e6867e90301f0a.bindTooltip(
+                `<div>
+                     Fire Sign Café
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57679eccc6a31bc0b37243f150b5bf28 = L.marker(
+                [38.9567, -119.944],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_886bfe4faebef39d8d308b76f23c9d16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_57679eccc6a31bc0b37243f150b5bf28.setIcon(icon_886bfe4faebef39d8d308b76f23c9d16);
+        
+    
+        var popup_0cb7e30e1dfe82bf1139bd1148f8699a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09ca33bc560d623ba833a97a1a6085b6 = $(`<div id="html_09ca33bc560d623ba833a97a1a6085b6" style="width: 100.0%; height: 100.0%;"><b>Basecamp Pizza Co.</b><br>Kid-friendly patio dining with great pizzas</div>`)[0];
+            popup_0cb7e30e1dfe82bf1139bd1148f8699a.setContent(html_09ca33bc560d623ba833a97a1a6085b6);
+        
+
+        marker_57679eccc6a31bc0b37243f150b5bf28.bindPopup(popup_0cb7e30e1dfe82bf1139bd1148f8699a)
+        ;
+
+        
+    
+    
+            marker_57679eccc6a31bc0b37243f150b5bf28.bindTooltip(
+                `<div>
+                     Basecamp Pizza Co.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98cd373a93b43bdadc90c60ca84f672c = L.marker(
+                [38.9492, -119.9601],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_87afda89ec281b79eb46933d74bea995 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_98cd373a93b43bdadc90c60ca84f672c.setIcon(icon_87afda89ec281b79eb46933d74bea995);
+        
+    
+        var popup_0fc5b5542ee12085785b8dae09437527 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da368a51983b85810e5f3fffb7aa43f9 = $(`<div id="html_da368a51983b85810e5f3fffb7aa43f9" style="width: 100.0%; height: 100.0%;"><b>Sprouts Café</b><br>Healthy and casual with smoothies for kids</div>`)[0];
+            popup_0fc5b5542ee12085785b8dae09437527.setContent(html_da368a51983b85810e5f3fffb7aa43f9);
+        
+
+        marker_98cd373a93b43bdadc90c60ca84f672c.bindPopup(popup_0fc5b5542ee12085785b8dae09437527)
+        ;
+
+        
+    
+    
+            marker_98cd373a93b43bdadc90c60ca84f672c.bindTooltip(
+                `<div>
+                     Sprouts Café
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73d09a5680d90f535c3b5105c14e7a66 = L.marker(
+                [39.153, -120.1472],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_309d41c6054f27b0fe45078befe641dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_73d09a5680d90f535c3b5105c14e7a66.setIcon(icon_309d41c6054f27b0fe45078befe641dd);
+        
+    
+        var popup_1b09725affef6bc3702d16a76aba3fad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d04b8f9d5ddd511e9f1042eaf154d6bf = $(`<div id="html_d04b8f9d5ddd511e9f1042eaf154d6bf" style="width: 100.0%; height: 100.0%;"><b>Bridgetender Tavern & Grill</b><br>Relaxed riverside dining</div>`)[0];
+            popup_1b09725affef6bc3702d16a76aba3fad.setContent(html_d04b8f9d5ddd511e9f1042eaf154d6bf);
+        
+
+        marker_73d09a5680d90f535c3b5105c14e7a66.bindPopup(popup_1b09725affef6bc3702d16a76aba3fad)
+        ;
+
+        
+    
+    
+            marker_73d09a5680d90f535c3b5105c14e7a66.bindTooltip(
+                `<div>
+                     Bridgetender Tavern & Grill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e977078988137b34d08ff21d3a4def7c = L.marker(
+                [39.0851, -120.161],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_2ac4522a453bbb5dc59f34d2c5d9092c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e977078988137b34d08ff21d3a4def7c.setIcon(icon_2ac4522a453bbb5dc59f34d2c5d9092c);
+        
+    
+        var popup_66a857bb8f231747b2f6d16cbd244cc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8373fc1fa8e177f42d2a1ed3feeb196 = $(`<div id="html_e8373fc1fa8e177f42d2a1ed3feeb196" style="width: 100.0%; height: 100.0%;"><b>West Shore Café</b><br>Lakeside dining with welcoming menu</div>`)[0];
+            popup_66a857bb8f231747b2f6d16cbd244cc1.setContent(html_e8373fc1fa8e177f42d2a1ed3feeb196);
+        
+
+        marker_e977078988137b34d08ff21d3a4def7c.bindPopup(popup_66a857bb8f231747b2f6d16cbd244cc1)
+        ;
+
+        
+    
+    
+            marker_e977078988137b34d08ff21d3a4def7c.bindTooltip(
+                `<div>
+                     West Shore Café
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f886b797e81e272006670bb0fc82844 = L.marker(
+                [38.9222, -119.9852],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_27d0fd096aabea6e2f365e68cc835ed7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9f886b797e81e272006670bb0fc82844.setIcon(icon_27d0fd096aabea6e2f365e68cc835ed7);
+        
+    
+        var popup_aa6e3b582730f16b7379575cb78fcba3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5724d9edb1e98e73ab1cd16796a6107 = $(`<div id="html_e5724d9edb1e98e73ab1cd16796a6107" style="width: 100.0%; height: 100.0%;"><b>The Hangar - Taproom and Bottle Shop</b><br>Beer garden with space for kids to roam</div>`)[0];
+            popup_aa6e3b582730f16b7379575cb78fcba3.setContent(html_e5724d9edb1e98e73ab1cd16796a6107);
+        
+
+        marker_9f886b797e81e272006670bb0fc82844.bindPopup(popup_aa6e3b582730f16b7379575cb78fcba3)
+        ;
+
+        
+    
+    
+            marker_9f886b797e81e272006670bb0fc82844.bindTooltip(
+                `<div>
+                     The Hangar - Taproom and Bottle Shop
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67352b32a71f54962c7e4e12c8331ae9 = L.marker(
+                [39.3263, -120.1827],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_7832c6cc17bd19bf2d953f821fee033d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_67352b32a71f54962c7e4e12c8331ae9.setIcon(icon_7832c6cc17bd19bf2d953f821fee033d);
+        
+    
+        var popup_a5eac8aa4b4927e5f06541c5ede75e5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_504e61a3e9f77a631200e9ee9eb515c0 = $(`<div id="html_504e61a3e9f77a631200e9ee9eb515c0" style="width: 100.0%; height: 100.0%;"><b>Alibi Ale Works – Truckee Public House</b><br>Family-friendly brewery with live music</div>`)[0];
+            popup_a5eac8aa4b4927e5f06541c5ede75e5b.setContent(html_504e61a3e9f77a631200e9ee9eb515c0);
+        
+
+        marker_67352b32a71f54962c7e4e12c8331ae9.bindPopup(popup_a5eac8aa4b4927e5f06541c5ede75e5b)
+        ;
+
+        
+    
+    
+            marker_67352b32a71f54962c7e4e12c8331ae9.bindTooltip(
+                `<div>
+                     Alibi Ale Works – Truckee Public House
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79dd74cd7db25e2dbebbace6bf7bad7b = L.marker(
+                [38.9503, -119.9655],
+                {}
+            ).addTo(map_d91280e903ce203b3e1cae24a2f72957);
+        
+    
+            var icon_26f99b84c49ac5d858a93604df96196f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_79dd74cd7db25e2dbebbace6bf7bad7b.setIcon(icon_26f99b84c49ac5d858a93604df96196f);
+        
+    
+        var popup_898c2a787584902565988eb7be9f0d4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97c19249e59edc6c3467a691c9cc7992 = $(`<div id="html_97c19249e59edc6c3467a691c9cc7992" style="width: 100.0%; height: 100.0%;"><b>Wildwood Maker Market & Café</b><br>Coffee for adults and play space for kids</div>`)[0];
+            popup_898c2a787584902565988eb7be9f0d4f.setContent(html_97c19249e59edc6c3467a691c9cc7992);
+        
+
+        marker_79dd74cd7db25e2dbebbace6bf7bad7b.bindPopup(popup_898c2a787584902565988eb7be9f0d4f)
+        ;
+
+        
+    
+    
+            marker_79dd74cd7db25e2dbebbace6bf7bad7b.bindTooltip(
+                `<div>
+                     Wildwood Maker Market & Café
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
